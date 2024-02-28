@@ -16,26 +16,43 @@
             width: 750px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         td.num{
             text-align: right;
-           
-        }
-        .posicao{
-            width: 100px;
-            text-align: center;
             
         }
         .porcent{
             text-align: center;
         }
+        .posicao{
+            text-align: center;
+            width: 50px;
+        }
         thead{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        tbody > tr:nth-child(even ){
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
         }
         tfoot{
             background-color: gray;
@@ -49,6 +66,8 @@
     <!--
         Anatomias para tabelas grandes
         table
+             caption
+
             thead
                 tr, td, th
             tbody
@@ -57,10 +76,11 @@
                 tr, td, th
     -->
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <th class="posicao">Posição</th>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
             <th>% da pop.total</th>
         </thead>
         <tbody>
@@ -230,13 +250,15 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Todal de habitantes</th>
+            <th scope="row">Todal de habitantes</th>
             <td>0000</td>
             <td>0000</td>
             <td>0000</td>
 
         </tfoot>
     </table>
+
+
     
 </body>
 </html>
