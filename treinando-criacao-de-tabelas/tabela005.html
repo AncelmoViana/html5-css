@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela 005</title>
+
+    <style>
+
+        
+
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            
+           
+        }
+        .col1{
+            background-color: gray;
+        }
+        .linhacinza{
+            background-color: gray;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <table>
+
+        <colgroup>
+
+            <col class="col1">
+            <col class="col2">
+            <col class="col3">
+        </colgroup>
+        <thead>
+            <tr class="linhacinza">
+                <th scope="col"> Matéria</th> <th scope="col">Aluno</th> <th scope="col">Notas da Prova</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <th rowspan="4">Português</th> <td>Fernando</td> <td>96</td>
+            </tr>
+            <tr>
+                <td>Joel</td> <td>87</td>
+            </tr>
+            <tr>
+                <td>Márcio</td> <td>83</td>
+            </tr>
+            <tr>
+                <td>José</td> <td>78</td>
+            </tr>
+
+
+
+            <tr>
+                <th rowspan="4">Matemática</th> <td>Fernando</td> <td>78</td>
+            </tr>
+            <tr>
+                <td>Joel</td> <td>85</td>
+            </tr>
+            <tr>
+                <td>Márcio</td> <td>72</td>
+            </tr>
+            <tr>
+                <td>José</td> <td>81</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
