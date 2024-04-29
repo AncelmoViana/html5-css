@@ -10,6 +10,7 @@
             font-family: Arial, Helvetica, sans-serif;
             margin: auto;
             border-collapse: collapse;
+            text-align: center;
         }
         th, td{
             border: 1px solid black;
@@ -21,9 +22,37 @@
     <table>
         <thead>
             <tr>
-                <th>Funcionário</th> <th>Semestre</th> <th>Gastos Lucros</th>
+                <th rowspan="2" scope="col">Funcionário</th> <th rowspan="2" scope="col">Semestre</th> <th colspan="2" scope="colgroup">Gastos</th> <th colspan="2" scope="colgroup">Lucros</th>
+            </tr>
+            <tr>
+                <th scope="col">Liq</th> <th scope="col">Brut</th> <th scope="col">Liq</th> <th scope="col">Brut</th>
             </tr>
         </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Joâo</th> <td>1</td> <td>R$ 10,00</td>  <td>R$ 15,00</td> <td>R$ 70,00</td> <td>R$ 85,00</td>
+            </tr>
+
+            <tr>
+                <td>2</td> <td>R$ 20,00</td> <td>R$ 20,00</td> <td>R$ 150,00</td><td> R$ 170,00</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2" scope="rowgroup">Maria</th> <td>1</td> <td>R$ 10,00</td>  <td>R$ 15,00</td> <td>R$ 10,00</td> <td>R$ 25,00</td>
+            </tr>
+
+            <tr>
+                <td>2</td> <td>R$ 15,00</td> <td>R$ 20,00</td>  <td>R$ 120,00</td> <td>R$ 140,00</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2" scope="rowgroup">Antônio</th> <td>1</td> <td>R$ 10,00</td>  <td>R$ 15,00</td>  <td>R$ 100,00</td> <td>R$ 115,00</td>
+            </tr>
+            <tr>
+                <td>2</td> <td>R$ 10,00 </td> <td>R$ 20,00</td> <td>R$ 400,00</td> <td>R$ 420,00</td>
+            </tr>
+        </tbody>
     </table>
     
 </body>
