@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela0011</title>
+</head>
+<style>
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        text-align: center;
+        margin: auto;
+    }
+    thead{
+        background-color: rgb(195, 219, 195);
+    }
+    th, td{
+        border: 1px solid black;
+        padding: 10px;
+        
+    }
+</style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Segmento</th> <th scope="col">Subsegmento</th> <th scope="col">Cliente</th> <th scope="col">Qnt de Licenças</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Tecnologia</th> <td rowspan="2">Software</td> <td>Empresa A</td> <td>100</td>
+            </tr>
+            <tr>
+                <td>Empresa B</td> <td>150</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Hardware</td> <td>Embresa C</td> <td>200</td>
+            </tr>
+            <tr>
+                <td>Empresa D</td> <td>50</td>
+            </tr>
+
+
+
+            <tr>
+                <th rowspan="4" scope="rowgroup">Varejo</th> <td>Eletrônicos</td><td> Empresa E</td> <td>300</td>
+            </tr>
+            <tr>
+                <td>Vestuário</td> <td>Empresa F</td> <td>120</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Supermercados</td> <td>Empresa G</td><td> 80</td>
+            </tr>
+            <tr>
+                <td>Empresa H</td> <td>200</td>
+            </tr>
+
+
+            <tr>
+                <th rowspan="4" scope="rowgroup">Saúde</th> <td rowspan="3">Hospitais</td> <td>Empresa I</td><td> 80</td>
+            </tr>
+            <tr>
+                <td>Empresa J</td> <td>180</td>
+            </tr>
+            <tr>
+                <td>Empresa K</td> <td>250</td>
+            </tr>
+
+            <tr>
+                <td>Plano de Saúde</td> <td>Empresa L</td> <td>150</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
